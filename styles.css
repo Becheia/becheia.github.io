@@ -43,11 +43,33 @@ footer {
   text-align: center;
 }
 
-/* Estilos específicos para la página de contacto */
+
 h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
+.landscape-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.landscape-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  width: 50%; /* El 50% del ancho para el texto */
+}
+
+.image-content {
+  width: 50%; /* El 50% del ancho para la imagen */
+}
+
 
 form {
   display: flex;
