@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+  background-color: #7e788a;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -45,7 +46,7 @@ footer {
 
 
 h1 {
-  font-size: 32px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 .landscape-section {
@@ -145,37 +146,25 @@ input[type="submit"] {
   color: green;
   font-weight: bold;
 }
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
+
 
 #image-container {
   margin-top: 20px;
+  display: inline-block;
 }
 
 #image-container img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
+
 
 #carousel-container {
   margin-top: 20px;
   position: relative;
 }
 
-#image-container {
-  display: inline-block;
-}
 
-#image-container img {
-  max-width: 100%;
-  height: auto;
-}
 
 .nav-button {
   position: absolute;
