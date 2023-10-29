@@ -24,6 +24,7 @@ function showImage() {
   image.alt='Portfolio Image';
   imageContainer.innerHTML = ' ';
   imageContainer.appendChild(image);
+  
 }
 
 function nextImage() {
@@ -42,9 +43,11 @@ function previousImage() {
   }
   showImage();
 }
-function cambiarImagen(image) {
-  document.getElementById("mainImage").src = image;
+function cambiarImagenDesdeMiniatura(imagenIndex) {
+  currentImageIndex = imagenIndex;
+  showImage();
 }
+
 
 showImage();
 
@@ -57,3 +60,11 @@ document.addEventListener('keydown', function(event) {
 });
 nextButton.addEventListener('click', nextImage);
 prevButton.addEventListener('click', previousImage);
+
+var thumbnails = document.querySelectorAll('.thumbnail');
+
+thumbnails.forEach(function (thumbnail, index) {
+  thumbnail.addEventListener('click', function () {
+    cambiarImagenDesdeMiniatura(index);
+  });
+});

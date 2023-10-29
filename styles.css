@@ -180,9 +180,13 @@ input[type="submit"] {
   width: 100px;
   height: 75px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-
+#mainImage {
+  margin-bottom: 20px;
+   
+}
 
 .nav-button {
   position: absolute;
