@@ -182,7 +182,14 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 20px;
 }
-
+.thumbnail:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% (ajusta según tus preferencias) */
+  transition: transform 0.3s; /* Agrega una transición suave */
+}
+.thumbnail:hover {
+  opacity: 0.8; /* Reduce la opacidad (ajusta según tus preferencias) */
+  transition: opacity 0.3s; /* Agrega una transición suave */
+}
 #mainImage {
   margin-bottom: 20px;
    
