@@ -5,6 +5,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var message = document.getElementById('message').value;
+  var aceptoCheckbox = document.getElementById("acepto");
   
   // Validar los campos
   var isValid = true;
@@ -31,6 +32,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     showError('message', 'El mensaje es obligatorio');
   } else {
     removeError('message');
+  }
+  if (!aceptoCheckbox.checked) {
+    alert("Debes aceptar los términos y condiciones para continuar.");
+    return false; // Evita que se envíe el formulario
   }
   
   // Mostrar mensaje de éxito o error
@@ -93,6 +98,7 @@ function clearForm() {
   document.getElementById('name').value = '';
   document.getElementById('email').value = '';
   document.getElementById('message').value = '';
+  document.getElementById("acepto").checked = false;
 }
 
 function validateEmail(email) {

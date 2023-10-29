@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu página de fotografía - Contacto</title>
+  <title>Becheia - Contacto</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -24,13 +24,17 @@
       <div class="contact-form">
         <form id="contact-form">
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required maxlength="20" pattern="[A-Za-z]{0,20}">
+          
           
           <label for="email">Correo electrónico:</label>
           <input type="email" id="email" name="email" required>
           
           <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" required maxlength="200"></textarea>
+
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto los términos y condiciones</label><br>
           
           <input type="submit" value="Enviar">
         </form>
@@ -39,15 +43,10 @@
       <div class="contact-info">
         <h2>Información Util</h2>
           <p><img src="icono/phone.png" alt="Icono de teléfono"> <strong>Teléfono:</strong> +123 456 789</p>
-          <p><img src="icono/world.png" alt="Icono de mapa"> <strong>Dirección:</strong> Calle Principal, Ciudad, País</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.846481238805!2d-122.0837395843117!3d37.38605137983856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc54443e1603%3A0x9464a8d307ebce3!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1574871861157!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen=""
-          ></iframe>
+          <p><img src="icono/world.png" alt="Icono de mapa"> <strong>Dirección:</strong> Presidente Peron 1269, San Luis, Argentina</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.7324443431164!2d-66.3294125303339!3d-33.294500077364695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43ff57d02202b%3A0x4569473be01c9fd6!2sCarmelo!5e0!3m2!1ses!2sar!4v1698540054277!5m2!1ses!2sar"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
       </div>
         
     </div>
@@ -55,7 +54,7 @@
   </main>
 
   <footer>
-    <p>Becheia &copy; 2023</p>
+    <p>Becheia &copy; 2023 Contacto.  Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>

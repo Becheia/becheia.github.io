@@ -64,11 +64,11 @@ h1 {
 }
 
 .text-content {
-  width: 50%; /* El 50% del ancho para el texto */
+  width: 50%; 
 }
 
 .image-content {
-  width: 50%; /* El 50% del ancho para la imagen */
+  width: 50%; 
 }
 
 
@@ -87,13 +87,25 @@ form {
 }
 
 .contact-form {
+  background-color: #c7beda;
   width: 45%; 
   text-align: center;
+  border: 2px solid #000;
+  padding: 20px;
+  width: 500px; 
+  margin: 0 auto;
+  border-radius: 15px;
 }
 
 .contact-info {
+  background-color: #c7beda;
   width: 45%; 
   text-align: center;
+  border: 2px solid #000;
+  padding: 20px;
+  width: 600px; 
+  margin: 0 auto;
+  border-radius: 15px;
 }
 
 .contact-info h2,
@@ -162,6 +174,12 @@ input[type="submit"] {
 #carousel-container {
   margin-top: 20px;
   position: relative;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 75px;
+  cursor: pointer;
 }
 
 

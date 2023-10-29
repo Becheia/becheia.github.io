@@ -1,8 +1,8 @@
 <html>
 <head>
-  <title>Porfolio</title>
+  <title>Becheia - Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="scriptPorfolio.js"></script>
+  
 </head>
 <body>
   <header>
@@ -14,21 +14,31 @@
       </ul>
     </nav>
   </header>
-
+  <button id="prev-button" class="nav-button">←</button>
   <main>
-    <h1>Porfolio</h1>
+    <h1>Portfolio</h1>
+    <p>Aqui puedes encontrar algunas imagenes galardonadas de mi Portfolio.</p>
     <div id="carousel-container">
-      <div id="image-container"></div>
-      <button id="prev-button" class="nav-button">←</button>
-      <button id="next-button" class="nav-button">→</button>
+      <div id="image-container">
+        <img id="mainImage" src="images/image1.jpg" alt="Imagen Principal">
+      </div>
+      <div id="thumbnails">
+        <!-- Miniaturas -->
+        <img class="thumbnail" src="images/image1.jpg" alt="Miniatura 1" onclick="cambiarImagen('images/image1.jpg')">
+        <img class="thumbnail" src="images/image2.jpg" alt="Miniatura 2" onclick="cambiarImagen('images/image2.jpg')">
+        <img class="thumbnail" src="images/image3.jpg" alt="Miniatura 3" onclick="cambiarImagen('images/image3.jpg')">
+        <!-- Agrega más miniaturas según tus imágenes -->
+      </div>
     </div>
+    
   </main>
-
+  <button id="next-button" class="nav-button">→</button>
+  
 
   <footer>
     <p>Becheia&copy; 2023 Portfolio. Todos los derechos reservados.</p>
   </footer>
 
-  
+  <script src="scriptPorfolio.js"></script>
 </body>
 </html>

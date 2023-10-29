@@ -10,6 +10,7 @@ var images = [
   'images/image9.jpg',
   'images/image10.jpg',
   'images/image11.jpg',
+  
 ];
 
 var currentImageIndex = 0;
@@ -18,10 +19,10 @@ var prevButton = document.getElementById('prev-button');
 var nextButton = document.getElementById('next-button');
 
 function showImage() {
-  imageContainer.innerHTML = '';
-
   var image = document.createElement('img');
   image.src = images[currentImageIndex];
+  image.alt='Portfolio Image';
+  imageContainer.innerHTML = ' ';
   imageContainer.appendChild(image);
 }
 
@@ -33,12 +34,16 @@ function nextImage() {
   showImage();
 }
 
+
 function previousImage() {
   currentImageIndex--;
   if (currentImageIndex < 0) {
     currentImageIndex = images.length - 1;
   }
   showImage();
+}
+function cambiarImagen(image) {
+  document.getElementById("mainImage").src = image;
 }
 
 showImage();
